@@ -21,7 +21,7 @@ function CalcularPromedio() {
     n4 = parseFloat(n4);
     n5 = parseFloat(n5);
 
-//Sumamos las notas y la promediamos por la cantidad de notas ingresas//
+///Sumamos las notas y la promediamos por la cantidad de notas ingresas//
     let pro = (n1 + n2 + n3 + n4 + n5) / 5;
     document.getElementById("promedio").innerHTML = pro;
 
