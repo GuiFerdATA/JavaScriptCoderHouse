@@ -16,3 +16,7 @@ h1{
 .hero p{
     font-size: 25px;
 }
+#promedio{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
