@@ -56,8 +56,8 @@ function CalcularPromedio() {
 let hero = document.querySelector(".hero");
 
 //registrando evento//
-hero.addEventListener("mousedown", () => {
-    alert('Estas por completar tus notas, muchos exitos ' + nombreAlumno);
+hero.addEventListener("mouseenter", () => {
+    hero.style.backgroundImage = 'linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%)';
 })
 
 //Agregamos otro evento, registramos la tecla ENTER y le pedimos al usuario que continue con las notas mediante un alert//
