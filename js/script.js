@@ -14,18 +14,18 @@ function CalcularPromedio() {
     let n4 = document.getElementById("nota4").value;
     let n5 = document.getElementById("nota5").value;
 
-//Usamos los numeros con decimales//
+    //Usamos los numeros con decimales//
     n1 = parseFloat(n1);
     n2 = parseFloat(n2);
     n3 = parseFloat(n3);
     n4 = parseFloat(n4);
     n5 = parseFloat(n5);
 
-///Sumamos las notas y la promediamos por la cantidad de notas ingresas//
+    ///Sumamos las notas y la promediamos por la cantidad de notas ingresas//
     let pro = (n1 + n2 + n3 + n4 + n5) / 5;
     document.getElementById("promedio").innerHTML = pro;
 
-//Usamos IF o ELSE para determinar el resultado//
+    //Usamos IF o ELSE para determinar el resultado//
     if (pro >= 7) {
         alert('Aprobado ' + nombreAlumno,);
     } else {
@@ -37,19 +37,23 @@ function CalcularPromedio() {
     }
 
     //creamos un array dentro de la function//
-let datoAlumnos = ['direccion', 'telefono', 'ciudad', 'email'];
-function datoAdicionalAlumno() {
-    const direccion = prompt("Ingresa tu direccion");
-    const telefono = prompt("Ingresa el dni");
-    const ciudad = prompt("Ingresa tu ciudad");
-    const email = prompt("Ingresa tu e-mail");
+    let datoAlumnos = ['direccion', 'telefono', 'ciudad', 'email'];
+    function datoAdicionalAlumno() {
+        const direccion = prompt("Ingresa tu direccion");
+        const telefono = prompt("Ingresa el dni");
+        const ciudad = prompt("Ingresa tu ciudad");
+        const email = prompt("Ingresa tu e-mail");
+    }
+    //le pedimos al usuario datos adicionales alojados en nuestro array para continuar, en caso de que no quiera termina la operacion//
+    let boolean = confirm(' desea ingresar datos adicionarles? ' + nombreAlumno);
+    while (boolean) {
+        datoAlumnos.push(datoAdicionalAlumno());
+        boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
+    }
 }
-//le pedimos al usuario datos adicionales alojados en nuestro array para continuar, en caso de que no quiera termina la operacion//
-let boolean = confirm(' desea ingresar datos adicionarles? ' + nombreAlumno);
-while (boolean) {
-    datoAlumnos.push(datoAdicionalAlumno());
-    boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
-}
-
-}
-
+//Agregamos eventos//
+let hero = document.querySelector(".hero");
+//registrando evento//
+hero.addEventListener("mouseenter", () => {
+    alert('Estas por completar tus notas, muchos exitos '+ nombreAlumno);
+})
