@@ -51,9 +51,20 @@ function CalcularPromedio() {
         boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
     }
 }
-//Agregamos eventos//
+
+//Agregamos eventos en nuestro hero, y devolvemos mediante un alert//
 let hero = document.querySelector(".hero");
+
 //registrando evento//
 hero.addEventListener("mouseenter", () => {
-    alert('Estas por completar tus notas, muchos exitos '+ nombreAlumno);
+    alert('Estas por completar tus notas, muchos exitos ' + nombreAlumno);
 })
+
+//Agregamos otro evento, registramos la tecla ENTER y le pedimos al usuario que continue con las notas mediante un alert//
+let inputAll = document.getElementsByClassName('.inputAll')
+hero.addEventListener("keyup", function (event) {
+    if (event.code === 'Enter') {
+        alert('Precionaste ENTER, ingresa tu siguiente nota ' + nombreAlumno);
+    }
+})
+
