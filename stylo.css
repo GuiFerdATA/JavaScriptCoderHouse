@@ -27,3 +27,12 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
+
+#miForm{
+    margin-top: 30px;
+}
+
+#miform{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
