@@ -2,7 +2,6 @@ function guardarDatos() {
     localStorage.nombre = document.getElementById("nombre").value;
     localStorage.apellido = document.getElementById("apellido").value;
 }
-
 function recuperarDatos() {
     if ((localStorage.nombre != undefined) && (localStorage.apellido != undefined)) {
         document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + " apellido: " + localStorage.apellido;
