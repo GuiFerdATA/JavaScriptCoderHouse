@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <title>Inicio de sesion</title>
+</head>
+
+<body>
+    <h1>trabajo coderhouse</h1>
+    <div class="hero">
+        <form action="" id="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" />
+            
+            <label for="nombre">Apellido</label>
+            <input type="text" id="apellido" />
+            
+            <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+
+            <p id="datos">Pulsa para ver tu nombre y tu apellido.</p>
+            <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+        </form>
+    </div>
+    <div class="hero">
+        <form id="miForm" action="">
+            <input type="number" placeholder="Nota1" id="nota1"><br><br>
+            <input type="number" placeholder="Nota2" id="nota2"><br><br>
+            <input type="number" placeholder="Nota3" id="nota3"><br><br>
+            <input type="number" placeholder="Nota4" id="nota4"><br><br>
+            <input type="number" placeholder="Nota5" id="nota5"><br><br>
+            <input type="button" value="Calcular" onclick="CalcularPromedio()">
+            <input type="button" value="Clear" onclick="limpiarFormulario()">
+            <p id="promedio" class="">Resultado</p>
+
+
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/session.js"></script>
+</body>
+
+</html>
