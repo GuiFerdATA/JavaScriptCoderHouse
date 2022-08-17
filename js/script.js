@@ -36,7 +36,8 @@ function CalcularPromedio() {
             alert('Desaprobado ' + nombreAlumno,);
         }
     }
-    //creamos un array dentro de la function//
+    /*
+    //creamos un array dentro de la function// PREPARAR PARA LA 3RA ENTREGA DE PROYECTO FINAL
     let datoAlumnos = ['direccion', 'telefono', 'ciudad', 'email'];
     function datoAdicionalAlumno() {
         const direccion = prompt("Ingresa tu direccion");
@@ -50,7 +51,9 @@ function CalcularPromedio() {
         datoAlumnos.push(datoAdicionalAlumno());
         boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
     }
+    */
 }
+
 //Agregamos eventos en nuestro hero, y devolvemos mediante un alert//
 let hero = document.querySelector(".hero");
 //registrando evento//
