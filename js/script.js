@@ -11,6 +11,7 @@ function recuperarDatos() {
 }
 //creasmos la funcion para calcular el promedio y que devuelva el valor//
 function CalcularPromedio() {
+    let nombreAlumno = document.getElementById("nombre").value;
     let n1 = document.getElementById("nota1").value;
     let n2 = document.getElementById("nota2").value;
     let n3 = document.getElementById("nota3").value;
