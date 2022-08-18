@@ -2,10 +2,21 @@ function ir() {
     let c = 1234;
     let u = "JavaScript";
     if (document.form.password.value == c && document.form.login.value == u) {
-        alert("¡Usuario y contraseña correctos!");
-        window.location = "promedio.html";
+        Swal.fire({
+            icon: 'success',
+            title: '¡Exito!',
+            text: '¡Usuario y contraseña exitoso!',
+        })
+            .then(function () {
+                window.location = "promedio.html";
+            })
     }
     else {
-        alert("Por favor ingresa el nombre y usuario correcto.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor ingresa el nombre y usuario correcto.',
+        })
     }
 }
+
