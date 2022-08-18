@@ -1,12 +1,20 @@
 function guardarDatos() {
     localStorage.nombre = document.getElementById("nombre").value;
     localStorage.apellido = document.getElementById("apellido").value;
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Tus datos se guardaron satisfactoriamente',
+        showConfirmButton: false,
+        timer: 1500
+    })
 }
 function recuperarDatos() {
     if ((localStorage.nombre != undefined) && (localStorage.apellido != undefined)) {
         document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + " apellido: " + localStorage.apellido;
     } else {
         document.getElementById("datos").innerHTML = "No has introducido tu nombre y tu apellido";
+
     }
 }
 //creasmos la funcion para calcular el promedio y que devuelva el valor//
@@ -28,12 +36,24 @@ function CalcularPromedio() {
     document.getElementById("promedio").innerHTML = pro;
     //Usamos IF o ELSE para determinar el resultado//
     if (pro >= 7) {
-        alert('Aprobado ' + nombreAlumno,);
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Aprobado ' + nombreAlumno,
+        })
     } else {
         if (pro >= 4) {
-            alert('Regular ' + nombreAlumno,);
+            Swal.fire({
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Regular ' + nombreAlumno,
+            })
         } else {
-            alert('Desaprobado ' + nombreAlumno,);
+            Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Desaprobado ' + nombreAlumno,
+            })
         }
     }
     /*
