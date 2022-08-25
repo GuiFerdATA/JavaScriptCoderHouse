@@ -15,24 +15,24 @@
         "id": 3,
         "nombre": "Guido",
         "apellido": "Pasciucco",
-        "trabajo": "Tutoria"
+        "puesto": "Tutoria"
     },
     {
-        "id": 3,
+        "id": 4,
         "nombre": "Ezequiel Damian",
         "apellido": "Puglisi",
-        "trabajo": "Tutoria"
+        "puesto": "Tutoria"
     },
     {
-        "id": 3,
+        "id": 5,
         "nombre": "Matias",
         "apellido": "Agobian",
-        "trabajo": "Tutoria"
+        "puesto": "Tutoria"
     },
     {
-        "id": 3,
+        "id": 6,
         "nombre": "Miguel Angel",
         "apellido": "Balestrini",
-        "trabajo": "Tutoria"
+        "puesto": "Tutoria"
     }
 ]
