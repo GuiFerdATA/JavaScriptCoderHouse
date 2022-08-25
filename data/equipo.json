@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Florencia",
+        "apellido": "Hendel",
+        "puesto": "Profesora"
+    },
+    {
+        "id": 2,
+        "nombre": "Braian",
+        "apellido": "Silva",
+        "puesto": "Tutoria"
+    },
+    {
+        "id": 3,
+        "nombre": "Guido",
+        "apellido": "Pasciucco",
+        "trabajo": "Tutoria"
+    },
+    {
+        "id": 3,
+        "nombre": "Ezequiel Damian",
+        "apellido": "Puglisi",
+        "trabajo": "Tutoria"
+    },
+    {
+        "id": 3,
+        "nombre": "Matias",
+        "apellido": "Agobian",
+        "trabajo": "Tutoria"
+    },
+    {
+        "id": 3,
+        "nombre": "Miguel Angel",
+        "apellido": "Balestrini",
+        "trabajo": "Tutoria"
+    }
+]

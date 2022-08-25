@@ -21,6 +21,7 @@ h2{
     text-align: center;
 }
 
+
 #promedio{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
@@ -33,4 +34,15 @@ h2{
 #miform{
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+
+#mostrarEquipo{
+    margin-top: 20px;
+}
+.h2hero{
+    margin-top: 60px;
+}
+.contenido{
+    text-align: center;
 }
