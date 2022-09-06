@@ -1,5 +1,4 @@
 // Fetch API desde un JSON (Objeto)
-
 const cargarJSONArrayBtn = document.querySelector('#cargarJSONArray');
 cargarJSONArrayBtn.addEventListener('click', obtenerDatos);
 
@@ -17,12 +16,9 @@ function obtenerDatos() {
 
 function mostrarHTML(empleados) {
     const contenido = document.querySelector('#contenido');
-
     let html = '';
-
     empleados.forEach(empleado => {
         const { id, nombre, apellido, puesto } = empleado;
-
         html += `
             <p>ID: ${id} </p>
             <p>Empleado: ${nombre} </p>
@@ -30,7 +26,5 @@ function mostrarHTML(empleados) {
             <p>Puesto: ${puesto} </p>
         `
     });
-
     contenido.innerHTML = html;
-
 }

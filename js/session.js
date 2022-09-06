@@ -4,7 +4,7 @@ function ir() {
     if (document.form.password.value == c && document.form.login.value == u) {
         Swal.fire({
             icon: 'success',
-            title: '¡Exito!',
+            title: '¡Éxito!',
             text: '¡Usuario y contraseña exitoso!',
         })
             .then(function () {

@@ -17,7 +17,7 @@ function recuperarDatos() {
 
     }
 }
-//creasmos la funcion para calcular el promedio y que devuelva el valor//
+//creamos la función para calcular el promedio y que devuelva el valor//
 function CalcularPromedio() {
     let nombreAlumno = document.getElementById("nombre").value;
     let n1 = document.getElementById("nota1").value;
@@ -25,7 +25,7 @@ function CalcularPromedio() {
     let n3 = document.getElementById("nota3").value;
     let n4 = document.getElementById("nota4").value;
     let n5 = document.getElementById("nota5").value;
-    //Usamos los numeros con decimales//
+    //Usamos los números con decimales//
     n1 = parseFloat(n1);
     n2 = parseFloat(n2);
     n3 = parseFloat(n3);
@@ -78,7 +78,7 @@ function CalcularPromedio() {
             Swal.fire(JSON.stringify(formValues))
         }
     }
-    //le pedimos al usuario datos adicionales alojados en nuestro array para continuar, en caso de que no quiera termina la operacion//
+    //le pedimos al usuario datos adicionales alojados en nuestro array para continuar, en caso de que no quiera termina la operación//
     let boolean = confirm(' desea ingresar datos adicionarles? ' + nombreAlumno);
     while (boolean) {
         datoAlumnos.push(datoAdicionalAlumno());
@@ -93,7 +93,7 @@ hero.addEventListener("mouseenter", () => {
     hero.style.backgroundColor = '#43cea233';
 })
 
-//Limpiar Formulario
+//Limpiar Formulario//
 function limpiarFormulario() {
     document.getElementById("miForm").reset();
 }
