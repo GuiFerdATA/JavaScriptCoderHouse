@@ -56,14 +56,27 @@ function CalcularPromedio() {
             })
         }
     }
-    /*
     //creamos un array dentro de la function// PREPARAR PARA LA 3RA ENTREGA DE PROYECTO FINAL
-    let datoAlumnos = ['direccion', 'telefono', 'ciudad', 'email'];
+    let datoAlumnos = ['telefono', 'email', 'direccion',];
     function datoAdicionalAlumno() {
-        const direccion = prompt("Ingresa tu direccion");
-        const telefono = prompt("Ingresa el dni");
-        const ciudad = prompt("Ingresa tu ciudad");
-        const email = prompt("Ingresa tu e-mail");
+        Swal.fire({
+            title: 'Datos Adicionales',
+            html:
+                '<input id="swal-input1" class="swal2-input" placeholder="Email">' +
+                '<input id="swal-input2" class="swal2-input" placeholder="Telefono">' +
+                '<input id="swal-input3" class="swal2-input" placeholder="Direccion">',
+            focusConfirm: false,
+            preConfirm: () => {
+                return [
+                    document.getElementById('swal-input1').value,
+                    document.getElementById('swal-input2').value,
+                    document.getElementById('swal-input3').value
+                ]
+            }
+        })
+        if (formValues) {
+            Swal.fire(JSON.stringify(formValues))
+        }
     }
     //le pedimos al usuario datos adicionales alojados en nuestro array para continuar, en caso de que no quiera termina la operacion//
     let boolean = confirm(' desea ingresar datos adicionarles? ' + nombreAlumno);
@@ -71,22 +84,17 @@ function CalcularPromedio() {
         datoAlumnos.push(datoAdicionalAlumno());
         boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
     }
-    */
+
+
 }
 
-//Agregamos eventos en nuestro hero, y devolvemos mediante un alert//
+//Agregamos eventos en nuestro hero//
 let hero = document.querySelector(".hero");
 //registrando evento//
 hero.addEventListener("mouseenter", () => {
     hero.style.backgroundColor = '#43cea233';
 })
-//Agregamos otro evento, registramos la tecla ENTER y le pedimos al usuario que continue con las notas mediante un alert//
-let inputAll = document.getElementsByClassName('.inputAll')
-hero.addEventListener("keyup", function (event) {
-    if (event.code === 'Enter') {
-        alert('ingresa tu siguiente nota ' + nombreAlumno);
-    }
-})
+
 //Limpiar Formulario
 function limpiarFormulario() {
     document.getElementById("miForm").reset();
