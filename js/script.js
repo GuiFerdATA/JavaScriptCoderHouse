@@ -63,8 +63,8 @@ function CalcularPromedio() {
             title: 'Datos Adicionales',
             html:
                 '<input id="swal-input1" class="swal2-input" placeholder="Email">' +
-                '<input id="swal-input2" class="swal2-input" placeholder="Telefono">' +
-                '<input id="swal-input3" class="swal2-input" placeholder="Direccion">',
+                '<input id="swal-input2" class="swal2-input" placeholder="Teléfono">' +
+                '<input id="swal-input3" class="swal2-input" placeholder="Dirección">',
             focusConfirm: false,
             preConfirm: () => {
                 return [
@@ -84,8 +84,6 @@ function CalcularPromedio() {
         datoAlumnos.push(datoAdicionalAlumno());
         boolean = confirm('Desea seguir agregando datos adicionales?' + nombreAlumno);
     }
-
-
 }
 
 //Agregamos eventos en nuestro hero//
