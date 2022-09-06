@@ -56,7 +56,7 @@ function CalcularPromedio() {
             })
         }
     }
-    //creamos un array dentro de la function// PREPARAR PARA LA 3RA ENTREGA DE PROYECTO FINAL
+    //creamos un array // 
     let datoAlumnos = ['telefono', 'email', 'direccion',];
     function datoAdicionalAlumno() {
         Swal.fire({

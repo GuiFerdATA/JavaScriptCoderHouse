@@ -10,7 +10,6 @@ function obtenerDatos() {
         })
         .then(resultado => {
             mostrarHTML(resultado);
-            console.log(resultado)
         })
 }
 
